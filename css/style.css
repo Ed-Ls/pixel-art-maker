@@ -1,0 +1,145 @@
+:root {
+  /* Configuration */
+  --configuration-background: #1c2541;
+  --configuration-btn-validate: #313e66;
+  /* Invader */
+  --background-invader: #5aa9e6;
+  --invader-case-grey: #f9f9f9;
+  --invader-case-green: #79ea83;
+  --invader-case-black: #485460;
+  --invader-case-red: #fb4e48;
+}
+
+body {
+  background-color: var(--background-invader);
+  background: linear-gradient(45deg, #5aa9e6 0%, rgb(84, 119, 194) 100%);
+  height: 100vh;
+}
+
+.configuration {
+  width: 100%;
+  height: 20vh;
+  background-color: var(--configuration-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 10%;
+  border: none;
+  box-shadow: none;
+  padding: 1rem 2rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 1rem;
+  margin-left: 2px;
+  box-shadow: var(--invader-case-grey);
+}
+
+.input-pixel {
+  border-radius: 0;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  padding: 1rem 2rem;
+  margin-left: 2px;
+  text-decoration: none;
+  background: var(--configuration-btn-validate);
+  color: #f9f9f9;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.clear-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: 0;
+}
+
+#invader {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table,
+tr,
+td {
+  border: 3px solid #c3c3c4;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--invader-case-grey);
+}
+
+tr {
+  height: 30px;
+}
+
+td {
+  width: 30px;
+}
+
+/* td .blank {
+  background-color: var(--invader-case-grey);
+} */
+
+/* .filled {
+  background-color: var(--invader-case-black);
+  border-color: black;
+} */
+
+.color-selector {
+  width: 220px;
+  height: 70px;
+  background-color: var(--configuration-btn-validate);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.color {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+}
+
+.black {
+  background-color: var(--invader-case-black);
+  border: 3px solid black;
+}
+
+.grey {
+  background-color: var(--invader-case-grey);
+}
+
+.green {
+  background-color: var(--invader-case-green);
+  border: solid 3px #6ad873;
+}
+
+.red {
+  background-color: var(--invader-case-red);
+  border: solid 3px #dd3a34;
+}
+
+.selected {
+  width: 45px;
+  height: 45px;
+}

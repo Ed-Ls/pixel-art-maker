@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <form class="configuration">
+      <input
+        class="input-grid"
+        type="text"
+        placeholder="Taille de la grille"
+        name="grid"
+        required
+      />
+      <input
+        class="input-pixel"
+        type="text"
+        placeholder="Taille des pixels"
+        name="pixel"
+        required
+      />
+
+      <button class="submit-btn" type="submit">Valider</button>
+    </form>
+
+    <div id="invader">
+      <button class="clear-btn">Effacer</button>
+      <table class="tableCanvas"></table>
+    </div>
+
+    <div class="color-selector">
+      <div class="color grey"></div>
+      <div class="color black selected"></div>
+      <div class="color red"></div>
+      <div class="color green"></div>
+    </div>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>
